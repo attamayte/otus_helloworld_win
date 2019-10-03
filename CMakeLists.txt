@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(homework1 VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
+project(homework_helloworld VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
 set(Boost_USE_STATIC_LIBS           ON) 
 set(Boost_USE_MULTITHREADED         ON)
