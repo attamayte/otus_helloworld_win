@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(homework1 VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
+project(homework_helloworld VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
 set(Boost_USE_STATIC_LIBS           ON) 
 set(Boost_USE_MULTITHREADED         ON)
@@ -16,7 +16,7 @@ add_library(hello_lib lib.cpp)
 
 add_executable(test_version test_version.cpp)
 
-set_target_properties(hello helloworld test_version PROPERTIES
+set_target_properties(hello hello_lib test_version PROPERTIES
     CXX_STANDARD 17
     CXX_STANDARD_REQUIRED ON
     COMPILE_OPTIONS "-Wpedantic;-Wall;-Wextra"
